@@ -15,22 +15,49 @@ Finally add those api urls on to the code on the frontend with the html pages.
 
 here is the step by step process for that
 
-Step 1: Configure AWS Cloud9
-1. Create an AWS Cloud9 environment:
-   - Go to the AWS Management Console and search for "Cloud9". - Click "Create environment", give a name and choose the settings that suit your needs. - Click on "Next step" and then on "Create environment". 2. Open the Cloud9 environment:
-   - Once the environment is created, open it in the AWS Cloud9 IDE. Step 2: Create the DynamoDB table
-2. Open AWS DynamoDB:
-   - Go to the AWS Management Console, search for "DynamoDB" and open it. 2. Create a table:
-   - Click on "Create table". - Set table name to "property". - Set the primary key, for example "pid" as the partition key. - Configure other settings if necessary and click "Create".
-Step 3: Create the Lambda Function
-1. Create a Lambda function:
-   - Go to the AWS Management Console and search for "Lambda". - Click on "Create a job". - Select "Author from scratch". - Give your job a name and choose a time to use it. - Click on "Create a job".
-2. Add your Lambda function code:
-   - In the Lambda editor, paste the code you want to run.
-   - Configure identity management and required permissions. - Save work.
-Step 4: Create a REST API and API Gateway
-1. Create API:
-   - Go to AWS Management Console, search for “API Gateway” and open it. - Click on "Create API". - Select API type (REST). - Select "New API" and give it a name. 2. Create a bank and process:
-   - Describe things in terms for your API. - Configure integration with your Lambda function to manage different processes.
-3. Submit API:
-   - Put the API in one place to bring it to life. - Get the final URL.
+Step 1: Set Up AWS Cloud9
+1. Create an AWS Cloud9 Environment:
+   - Go to the AWS Management Console and search for "Cloud9".
+   - Click "Create Environment", provide a name, and choose the settings that suit your needs.
+   - Click "Next Step" and then "Create Environment".
+
+2. Open the Cloud9 Environment:
+   - Once the environment is created, open it in the AWS Cloud9 IDE.
+
+Step 2: Create a DynamoDB Table
+1. Open AWS DynamoDB:
+   - Go to the AWS Management Console, search for "DynamoDB", and open it.
+
+2. Create a Table:
+   - Click "Create table".
+   - Set the table name as "property details".
+   - Define the primary key, for example, "pid" as the partition key.
+   - Configure other settings as needed and click "Create".
+
+Step 3: Create a Lambda Function
+1. Create a Lambda Function:
+   - Go to the AWS Management Console and search for "Lambda".
+   - Click "Create function".
+   - Choose "Author from scratch".
+   - Give your function a name and select the runtime .
+   - Click "Create function".
+
+2. Code Your Lambda Function:
+   - In the Lambda function editor, paste the code you want to run. 
+   - Configure the function handler and required permissions.
+   - Save the function.
+
+Step 4: Create a REST API with API Gateway
+1. Create an API:
+   - Go to the AWS Management Console, search for "API Gateway", and open it.
+   - Click "Create API".
+   - Choose the type of API (REST ).
+   - Select "New API" and give it a name.
+
+2. Create a Resource and Method:
+   - Define a resource and method for your API.
+   - Configure the integration with your Lambda function to handle the respective method.
+
+3. Deploy the API:
+   - Deploy the API to a stage to make it live.
+   - Obtain the endpoint URL.
